@@ -1,10 +1,7 @@
 {
   "openapi": "3.1.0",
-  "x-stoplight": {
-    "id": "ffc4fdb850aff"
-  },
   "info": {
-    "title": "apiexample",
+    "title": "oli",
     "version": "1.0"
   },
   "servers": [
@@ -264,6 +261,9 @@
             "type": "string",
             "format": "date",
             "description": "The date that the user was created."
+          },
+          "": {
+            "$ref": "./apiexample.json#/components/schemas/Police"
           }
         },
         "required": [
@@ -271,62 +271,8 @@
           "firstName",
           "lastName",
           "email",
-          "emailVerified"
-        ]
-      },
-      "Police": {
-        "title": "User",
-        "type": "object",
-        "description": "",
-        "examples": [
-          {
-            "id": 142,
-            "firstName": "Alice",
-            "lastName": "Smith",
-            "email": "alice.smith@gmail.com",
-            "dateOfBirth": "1997-10-31",
-            "emailVerified": true,
-            "signUpDate": "2019-08-24"
-          }
-        ],
-        "properties": {
-          "id": {
-            "type": "integer",
-            "description": "Unique identifier for the given user."
-          },
-          "firstName": {
-            "type": "string"
-          },
-          "lastName": {
-            "type": "string",
-            "description": "Holas"
-          },
-          "email": {
-            "type": "string",
-            "format": "email"
-          },
-          "dateOfBirth": {
-            "type": "string",
-            "format": "date",
-            "example": "1997-10-31"
-          },
-          "emailVerified": {
-            "type": "boolean",
-            "description": "Set to true if the user's email has been verified."
-          },
-          "createDate": {
-            "type": "string",
-            "format": "date",
-            "description": "The date that the user was created."
-          }
-        },
-        "required": [
-          "id",
-          "firstName",
-          "lastName",
-          "email",
-          "dateOfBirth",
-          "emailVerified"
+          "emailVerified",
+          null
         ]
       }
     }
