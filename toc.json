@@ -1,0 +1,27 @@
+{
+  "items": [
+    {
+      "type": "divider",
+      "title": "APIS"
+    },
+    {
+      "type": "item",
+      "title": "otherapi",
+      "uri": "/reference/otherapi.json"
+    },
+    {
+      "type": "item",
+      "title": "tres",
+      "uri": "/reference/tres.json"
+    },
+    {
+      "type": "divider",
+      "title": "Schemas"
+    },
+    {
+      "type": "item",
+      "title": "new",
+      "uri": "/Models/new.json"
+    }
+  ]
+}
